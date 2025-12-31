@@ -182,7 +182,7 @@ public class Game {
             return;
         }
         
-        // Check if player has enough resources for all units
+     
         Map<String, Integer> totalCost = new java.util.HashMap<>();
         for (Map.Entry<String, Integer> entry : unit.getCost().entrySet()) {
             totalCost.put(entry.getKey(), entry.getValue() * quantity);
@@ -220,7 +220,7 @@ public class Game {
             return;
         }
         
-        // Show enemies
+    
         System.out.println("\n🎯 Ennemis disponibles:");
         for (int i = 0; i < enemies.size(); i++) {
             Unit e = enemies.get(i);
@@ -263,7 +263,7 @@ public class Game {
             }
         }
         
-        // Conduct attacks
+   
        System.out.println("\n⚔️ COMBAT MULTIPLE! " + attackers.size() + " unités attaquent!");
         
        for (int i = 0; i < attackers.size(); i++) {
@@ -290,7 +290,7 @@ public class Game {
             }
         }
         
-        // Check if enemy died
+   
         if (enemy.getHp() <= 0) {
             System.out.println("\n✓ VICTOIRE! " + enemy.getName() + " éliminé!");
             enemies.remove(enemyIdx);
@@ -299,7 +299,7 @@ public class Game {
             System.out.println("💰 Butin: +30 Or, +10 Pierre");
         }
         
-        // Remove dead units
+   
         player.getUnits().removeIf(u -> u.getHp() <= 0);
     }
     

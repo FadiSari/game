@@ -18,3 +18,4 @@ public class Farm extends Building {
         return production;
     }
 }
+

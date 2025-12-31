@@ -13,5 +13,4 @@ public class Tile {
     public boolean isAccessible() { return accessible; }
 }
 
-// ============================================
-// map/TileType.java
+

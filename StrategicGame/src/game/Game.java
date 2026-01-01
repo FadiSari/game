@@ -21,7 +21,7 @@ public class Game {
         map = new GameMap(8, 8);
         player = new Player("Joueur");
         enemies = new ArrayList<>();
-        System.out.println ("IMPORTANT : YOU NEED TO BUILD A CAMP BEFORE ANYTHING ELSE !");
+        System.out.println ("IMPORTANT : YOU NEED TO BUILD A CAMP BEFORE ANYTHING ELSE !!");
         
         player.addResource("Or", 200);
         player.addResource("Bois", 150);
